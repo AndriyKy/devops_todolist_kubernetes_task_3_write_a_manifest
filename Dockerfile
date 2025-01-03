@@ -6,7 +6,7 @@ WORKDIR /devops_todolist_kubernetes_task_3_write_a_manifest
 COPY . ./
 
 # Runtime stage
-FROM python:${PYTHON_VERSION}-slim AS test
+FROM python:${PYTHON_VERSION}-slim
 WORKDIR /devops_todolist_kubernetes_task_3_write_a_manifest/src
 
 # Set an environment variable for the runtime.
